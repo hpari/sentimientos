@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>Sentimientos</title>
+
+  <!-- configuración del libro -->
+  <script>
+  window.book_config = {
+    auto_numerate_sections_and_figures: true, 
+  }
+  </script>
+
+  <!-- núcleo del libro interactivo -->
+  <link rel="stylesheet" href="book/css/style.css" type="text/css">
+  <script type="text/javascript" src="book/js/book.js" charset="utf-8"></script>
+  
+  <!-- personalización del usuario -->
+  <link rel="stylesheet" href="extra/fonts.css" type="text/css">
+  <link rel="stylesheet" href="extra/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="book_loader_container"><div id="book_loader"></div></div>
+
+  <div id="book_container">
+    <div id="btn_back_page"></div>
+    <div id="btn_next_page"></div>
+    <button id="go_to_table_of_content"></button>
+    
+    <button id="btn_config"></button>
+    <div id="config_options">
+      <div id="dark_light_mode"></div>
+    </div>
+
+    <!-- si este elemento no esta presente, el botón de la tabla de contenido lleva a la primera página con un elemento class="toc_link" -->
+    <div id="table_of_content"></div>
+
+    <div id="pages_container">
+      <!--  -->
+      <div class="page" style="background-color:transparent;">
+      </div>
+
+      <!--  -->
+      <div class="page invertcolor" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada.svg); " >
+	  
+	  <div style="position:absolute; left:58px; width:582px; height:582px;  background-image:url('images/importada.jpg'); background-size:582px 582px; background-position:0px 0px; "></div>
+	  
+        <div class="cover_title">SENTIMIENTOS</div>
+
+        <div class="cover_subtitle">Cecilia Pari Silva Santisteban</div>
+      </div>
+
+      <!--  -->
+      <!-- Una página en blanco y sin numeración visible -->
+      <!--  -->
+      <div class="page" num="">
+	  
+	  
+	  </div>
+
+      <!--  -->
+	  
+	  	
+    
+	  
+      <!-- init-page-num="true" es un parámetro que indica que a partir de esta página comienza la numeración -->
+      <!-- inicialmente los números de las páginas se numeran con numerales romanos -->
+      <!-- num="" es un parámetro que indica que esta página no lleva numeración visible -->
+      <!--  -->
+	  
+	  
+	  
+	  <!--  -->
+       <div class="page" style="text-align:center;;background-image:url('wallpaper/fondo3.jpg'); background-size:1280px 825px; background-position:right; color:#000;" init-page-num="true">
+        
+		
+		<img class="image_expand" onclick="openImage(this)" style="box-shadow:none;" src="imagenes/cecilia.jpg" width="80%">
+		 
+		<h1 style="color:white; font-size:50px; border-radius:20px; font-style:italic; background-color:rgba(53,33,100)"> SENTIMIENTOS</h1>
+
+        <h2>Poemario  de:</h2>
+		
+		<h1 style="color:black"><b>Cecilia Pari Silva Santisteban</b></h1>
+		
+		<h2>Pseudónimo:</h2>
+		
+		<h1 style="color:black">Khaekha López</h1>
+		
+		
+		<h2 ">Cajamarca - Perú</h2>
+
+      </div>
+
+      <!--  -->
+      <div class="page"  >
+        <p>
+          Título de la obra:
+          <br> 
+          SENTIMIENTOS
+        </p>
+        <br>
+
+        <p>
+          Autora:
+          <br> 
+          Cecilia Pari Silva Santisteban
+        </p>
+		
+		<p>
+          Diseño:
+          <br> 
+          Hugo Pari Silva Santisteban
+        </p>
+		
+        <br>
+
+        <p>
+          Código JavaScript para el libro: <a href="https://github.com/jlongi/libro_interactivo" target="_blank">Joel Espinosa Longi</a>, <a href="https://www.matem.unam.mx/" target="_blank">IMATE</a>, UNAM.
+          <br> 
+          Recursos interactivos: <a href="https://descartes.matem.unam.mx/" target="_blank">DescartesJS</a>
+          <br> 
+          Fuentes: <a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a> y <a href="https://fonts.google.com/specimen/Ubuntu+Mono" target="_blank">UbuntuMono</a>
+        </p>
+        <br>
+
+        <p>
+          PRIMERA EDICIÓN
+        </p>
+        <br><br>
+
+        <p>
+          <p>LICENCIA</p>
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank"><img src="images/general/by-nc-sa.svg" style="height:1.75em; margin-right:0.75em;"></a>
+          <p>El contendido de esta obra esta bajo una licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank">Creative Commons (Atribución-NoComercial-CompartirIgual)</a>.</p>
+        </p>
+      </div>
+
+       <!--CONTENIDO  -->
+       <div class="page" style="background-size:cover; background-image:url(imagenes/fondo_contenido.jpg);"   >
+      <div class="caja_menu">
+          
+		  <br>
+		  <br>
+		  
+        <p style="color:darkorange; font-size:34px"><b>CONTENIDO</b></p>
+		
+		<br>
+
+        <p class="toc_link" href="#luna1">
+          <pageref ref_id="luna1" postfix="LUNA" digits="2"></pageref>
+        </p>
+		
+		<br>
+		
+		<p class="toc_link" href="#andes">
+          <pageref ref_id="andes" postfix="EN LOS ANDES" digits="2"></pageref>
+        </p>
+		
+		<br>
+		
+		<p class="toc_link" href="#carta">
+          <pageref ref_id="carta" postfix="UNA CARTA A TI" digits="2"></pageref>
+        </p>
+		
+		<br>
+		
+		<p class="toc_link" href="#amor">
+          <pageref ref_id="amor" postfix="UN AMOR A SOMBRAS" digits="2"></pageref>
+        </p>
+		
+		<br>
+		
+		<p class="toc_link" href="#alma">
+          <pageref ref_id="alma" postfix="TU ALMA DESNUDA EN EL ESPEJO" digits="2"></pageref>
+        </p>
+		
+		<br>
+		
+		<p class="toc_link" href="#acalladito">
+          <pageref ref_id="acalladito" postfix="ACALLANDITO" digits="2"></pageref>
+        </p>
+		
+      </div>
+
+      </div>
+
+      <!--  -->
+      <!-- Una página en blanco y sin numeración visible -->
+      <!--  -->
+      <div class="page" style="background-image:url('wallpaper/sky1.jpg'); background-size:1280px 825px; background-position:left; color:white; font-size:18px; text-align:left;"  >
+      
+	  
+	  </div>
+
+      <!--  -->
+      <!-- num-type-arabic="true" es un parámetro que indica que a partir de esta página la numeración utilizara numerales arábigos -->
+      <!--  -->
+      <div class="page specialnum1" style="background-image:url('wallpaper/sky1.jpg'); background-size:1280px 825px; background-position:right;" >
+	  <br>
+	    <h1 id="luna1" style="color:orange; text-align:center; font-size: 40px;">LUNA</h1>
+		
+		
+		<div style="color:white; text-align:left; font-size: 30px; font-style:italic">
+		<p> Y se lleva el bote a lo que más amo.<br>
+		La luna lo acompañará en su travesía
+		pero, estará solo, con mis memorias,
+		con mis sonrisas y los momentos 
+		compartidos. <br>
+		Se aleja por el horizonte
+		taciturno, sin despedidas, sin lágrimas<br>
+		y con el viento en popa.<br>
+		Las lucesitas nocturnas,
+		que no son otra cosa que las estrellas,
+		serán su guía y, en el centro de todas, 
+		estará mi corazón mostrándole el norte.<br>
+		BYE... Amore mío... Vuelve pronto, siguiendo la luz de nuestra luna llena</p>
+        </div>
+		
+		<p style="color:orange;text-align:left; font-style:italic;"> Cecilia Pari Silva S.<br>
+           @Khaekha Lopez<br>
+            T. D. R.<br>
+        (Para mi querida, amada y bella amiga mejicana, Loreluna Morales)
+      </div>
+
+      <!--  -->
+      <!-- Una página en blanco y sin numeración visible -->
+      <!--  -->
+      <div class="page specialnum1" style="background-size:cover; background-image:url(fondos/bordes1.png);">
+	  
+	  <h1 id="andes" style="text-align:center; border-radius:20px; margin-left:100px; margin-top:100px; background-color:black; color:white">EN LOS ANDES</h1>
+	  
+	  <div style="margin-left:100px; text-align:left; font-size:21px; font-style:italic;">
+        <p><b>Pasear por ellos, es un sueño que muchos desean alcanzar.
+			Admirar desde sus cumbres, cómo un manto blanco abriga las bajas ciudades - bajas en apariencia; muchas de ellas alcanzan los tres mil metros de altura.</p>
+
+        <p>Contemplar la magestuosidad del vuelo de un Cóndor, ver correr veloces a los zorritos de muchos colores; es una ilusión magnífica aprecias el juego de las ardillas y reírme del enfado de las llamas.</p>
+        
+        <p>De un solo vistazo, puedo abrazar imaginariamente, a mis hermanos y hermanas de los pueblos pintorescos o aspirar todo ese aroma a tierra labrada y de las cocinas artesanales humeantes.</p>
+		
+		<p>Mi Ande, guarda secretos milenarios, historias ancestrales que tienen la edad del tiempo y en las aguas puras y cristalinas - si prestas atención - oirás cantar a las ñustas que el Inca adoraba; son canciones de amor y felicidad.</b></p>
+		
+	     </div>
+	  </div>
+
+      <!--  -->
+      
+      <!--  -->
+      <div class="page specialnum1" style="background-size:cover; background-image:url(fondos/bordes2.png);">
+	  
+	  <div style="margin-top:100px; text-align:left; font-size:21px; font-style:italic;width:80%">
+        <p><b>Cuán hermosa es mi Cordillera; con tableros del más increíble ajedrez mágico, porque sus colores representan una pieza clave de la alimentación del pueblo andino.
+		Con cuánto orgullo se trilla el trigo, rico en nutrientes para preparar platillos exquisitos a todos - porque, no solo será pan.
+		</p>
+	  
+		<p>Y, en las serranías profundas, allá, por dónde los ojos de propios y extraños, sin entrenamiento, no pueden ver, se extienden los grandes cementerios de roca, con formas tan variadas que el mejor escultor, solo soñaría haber tallado.</p>
+	  
+		<p>Dios bendice, me dijo una anciana. Ella era sabía, porque aún a esa distancia, más de cuatro mil metros, sí, encontraron oro, el preciado oro de los Incas, el valorado oro de los ancestros antes que ellos.</p>
+		
+		<p>Mi Ande...temido y admirado, aquel del cual solo he recorrido un treinta por ciento, pero, que sí no es en esta, será en otras, terminaré de recorrer, para seguir maravillándome de ella.</b></p>
+	  
+	  </div>
+	  
+      </div>
+
+      <!--  -->
+	  <div class="page specialnum2" style="background-image:url('wallpaper/verde2.jpg'); background-size:1280px 825px; background-position:left; border-right-color:rgba(100,100,100,1); color:#000;">
+	  
+	  <section class="caja0" style="background-color: rgba(120, 200, 130, 0.8); padding:5px 30px">
+        <h1 id="carta" style="font-size:40px; text-align:center; color:yellow "><b>UNA CARTA A TI</b></h1> 
+		<p style="font-size:22px; text-align:left; color:black;font-style:italic; ">
+		<b>Hola:<br>
+		La verdad, ya no recuerdo qué número de carta es la que te escribo hoy y tampoco sé, qué fue todo aquello que conté en la anterior carta.<br>
+		Hoy, estoy sentada frente al gran ventanal que tiene el vecino; ¿recuerdas aquel balcón corrido con esos bellos balaustres de ensueño? - los estoy mirando hoy y me siguen encantando.<br>
+		Te extraño tanto, tanto....<br>
+		No, no te preocupes, no estoy llorando, aunque da ganas de hacerlo porque este nudo aprieta cada vez más fuerte.<br>
+		Tampoco te asustes ¿sí?; no atentaré contra mi vida como la vez que te conté - estoy tomando todo lo que el psicólogo recetó.<br>
+		Pero, en verdad, esto de tenerte lejos duele tanto amor mío...<br>
+		No, no...no deseo preocuparte y mucho menos entristecerte; en cambio, deseo contarte, más bien, que ya crecieron las rosas lilas que sembramos, hay unos lindos botones en sus ramas, cada vez más fuertes - cuando broten te enviaré unas fotos de ellas; también, </b><br><br><br>
+		
+		</p>
+	  
+	  
+	  </section>
+	  
+	  </div>
+	  
+	  
+	  <!--  -->
+	  
+	  <div class="page specialnum2" style="background-image:url('wallpaper/verde2.jpg'); background-size:1280px 825px; background-position:right; color:#000; font-size:19px;">
+      
+	  <!--<section class="caja0" style="background-color: rgba(120, 200, 130, 0.8); padding-bottom:0.25em;">-->
+	  
+	  <section class="caja0" style="background-color: rgba(120, 200, 130, 0.8); padding:75px 25px 30px">
+        
+		<p style="font-size:22px; text-align:left; color:black;font-style:italic; ">
+		<b>Tomy, el gato, está más gordo y panzón que antes y sé que te extraña igual que yo - sus maullidos lastimeros a la Luna lo confirman.<br>
+		Es entonces, que un miedo inmenso invade mis neuronas; te imagino perdido por calles sin salida o desiertos de intenso calor o...en fin, en tantos lugares terribles y desolados y yo, distante de ti...<br>
+		¡Amor mio!... <br>
+		Ahora mismo tengo la visión perturbadora de tu agonía en intenso sufrimiento- no, no me hagas caso; sé que cuando llegues a tu apartamento, encontrarás mis cartas, junto a esta última que enviaré lo más pronto posible pero, antes de aquello, deja y te recuerdo lo tanto que aún te amo, te siento, te deseo y anhelo tu cuerpo junto al mío.<br>
+		Y creo, ya no más que decirte vida mía, mis neuronas deben reposar y esperar una respuesta a mis innumerables misivas.<br>
+		Hasta la próxima carta amado mío; tuya siempre : VIDA.</b></p>
+		
+	
+		<p style="color:yellow; text-align:right">
+		<b>Cecilia Pari Silva S.<br>
+		@KhaekhaLopez <br>
+		C. 10.19.2021 D. R.</b>
+		</p>
+	  
+	  
+	  </section>
+	  
+	  </div>
+	  
+	  <!-- 16 -->
+    <div class="page" style="background-image:url('wallpaper/fondo2.jpg'); background-size:1280px 825px; background-position:left; color:#000;">
+      
+	  <h1 id="amor" style="text-align:center; color: black; font-size:40px;">AMOR A SOMBRAS</h1>
+	  
+	  <p style="font-size:23px; margin-right:60px;font-style:italic"> <b>  Silenciosa, escondiendo la mirada, así está mi pobre alma por sentir lo que siente por ti.</b></p>
+	  
+	  <p style="font-size:23px; margin-right:60px;font-style:italic;"> <b>  Desespero cuando, por mi casa, paseas tu aroma  y en otras manos - torpes manos, quizás - te pasean, te transportan hacia lejanos destinos.</b></p>
+	  
+	  <p style="font-size:23px; margin-right:60px;font-style:italic;"> <b>  Te imagino en mi mesa, dibujando en tu piel dorada un sinnúmero de formas amorosas, sonriéndole a la vida y luego, degustar tu suave carne con loca pasión.</b></p>
+	  
+	   <p style="font-size:23px; margin-right:60px;font-style:italic;"> <b>  Es a mí, sólo a mí, a quien tú deberías permitir morderte e iluminar mis ojos al observar cada curva de tu cuerpo - ese cuerpo que resulta apetecible para mis sentidos.</b></p>
+	   
+	    <p style="font-size:23px; margin-right:60px;font-style:italic;"> <b>  No soy la musa que te quiere, no soy la luz que acompaña tu destino y... muero de rabia, porque ella, ella debería ser yo.</b></p>
+		
+		 <p style="font-size:23px; margin-right:60px;font-style:italic;"> <b>  Amor a sombras, no a ciegas...tal vez sí a ciegas, porque aquel, no piensa en mi triste corazón que sangra  desolado si no eres mío.</b></p>
+	  
+	  </div>
+	  
+	  <!-- 17 -->
+    <div class="page" style="background-image:url('wallpaper/fondo2.jpg'); background-size:1280px 825px; background-position:right; color:#000; font-size:19px;">
+	  
+	  
+	 <br>
+	 <br>
+	  
+	  <p style="font-size:23px; margin-left:40px;font-style:italic;"> <b>  Amor definitivamente tan distante, que ninguna otra alternativa, por más apetitosa y menos prohibida, puede reemplazar mi sentir por ti.</b></p>
+	  
+	  <p style="font-size:23px; margin-left:40px;font-style:italic;"> <b>  Porque eres mi obsesión, mi anhelo, ese sueño que en mi mundo de fantasía veo realizado, eres el manjar perfecto e idealizado.</b></p>
+	  
+	  <p style="font-size:23px; margin-left:40px;font-style:italic;"> <b>  Te deseo en las sombras, pero, si tan solo te hubiera pedido, si esos sentimientos suyos fueran los míos, porque te estoy amando desenfrenadamente ...¡Ay, de mi voluntad perdida en tu estampa!</b></p>
+	  
+	  <p style="font-size:23px; margin-left:40px;font-style:italic;"> <b>  Eres mi amor platónico, tú, solo tú...Es tanta mi obsesión por ti, que ya el doctor me prohibió el mirarte de reojo y desearte como te deseo...</b></p>
+	  
+	  <p style="font-size:23px; margin-left:40px;font-style:italic;"> <b>  A ti y solo a ti debo este tortura, no controlo mis impulsos de salir a buscarte y encontrarte en cada esquina ..a ti...a ti...mi anhelado manjar....<br>¡mi rico pollito a la brasa!</b></p>
+	  
+	  
+	  <p style="color:yellow; text-align:right"><b>Cecilia Pari Silva Santisteban<br>
+		@khaekhalopez<br>
+		C.10.28.2022 D.R. </b></p>
+	  </div>
+	  
+	  <!-- 24 -->
+    <div class="page" style="background-size:cover; background-image:url(fondos/famoso1a.png); background-repeat:no-repeat; color:white; font-size:21px; text-align:left;">
+	  <h1 id="alma" style="color:yellow; text-align:center"> <b>TU ALMA DESNUDA <br>EN EL ESPEJO</b></h1>
+	  <p style="margin-right:50px; font-size:25px; font-style:italic "><b>No haz perdido tu brillo blanca flor del bosque, sigues hermosa como antaño; aunque desnudes tu piel y cuentes sus pliegues, te aseguro que sigues siendo tú...tu escencia, tu figura, tu finura...tu aura.<br>
+		No se han marchitado, para nada, las finas expresiones de alegría; y, por más que te hayan dicho "vieja", "deslucida", "acabada", sigues siendo la estrella en el teatro de la vida...tú vida.<br>
+		No se ha nublado tu aurora y tus anocheceres siguen siendo gloriosos, genuinos, se podría decir, lujuriosos; sigues siendo tú, aunque el espejo te diga otra cosa.<br>
+		No haz cambiado mariposa de otoño, no lo haz hecho; quita el miedo de tu rostro, relaja el alma y el cuerpo desnudos frente al espejo. </b></p>
+	  
+	  <p style="color:yellow;">Cecilia Pari Silva Santisteban<br>
+		KhaekhaLopez<br>
+		C.10.09.2021 D.R. </p>
+	  </div>
+	  
+	  <!-- 24 -->
+	  <div class="page" style="background-size:cover; background-image:url(fondos/famoso1b.png); background-repeat: no-repeat; color:white;">
+    </div>
+	  
+	  
+	  <!-- 46 -->
+    <div class="page" style="background-size:cover; background-image:url(fondos/texto1.png); background-repeat: no-repeat; background-position: right; color: #000;">
+	
+	<h1 id="acalladito" style="text-align:center; "  > ACALLANDITO </h1>
+	
+	<img class="image_expand" onclick="openImage(this)" src="imagenes/Acallandito2.jpg" width="50%">
+	
+	<p style="font-size:30px"> <a href="https://youtu.be/tyUJ24veeSo" target="_blank">Ver en YouTube</a></p>
+	
+	<div class="caja14" style="width: 100%;"><video width="90%"  controls="" poster="videos/poster/Acallandito1.jpg" width="520" height="350"><source src="videos/ACALLANDITO.mp4" type="video/mp4"></video></div>
+	
+	
+	
+	
+	
+	</div>
+	
+	<!-- 47 -->
+    <div class="page" style="background-size:cover; background-image:url(fondos/texto2.png); background-repeat: no-repeat; background-position: right; color:#000;">  
+    </div>
+	
+	  
+      <!-- Una página en blanco y sin numeración visible -->
+      <!--  -->
+      <div class="page" style="text-align:center; background-image: radial-gradient(white, #ecf0f1, #e3e5e7); font-size:120%;" init-page-num="true" num="">
+        
+		
+		<img class="image_expand" onclick="openImage(this)" style="box-shadow:none;" src="imagenes/cecilia.jpg" width="80%">
+		
+		<h1 style="color:white;font-size:50px; border-radius:20px; font-style:italic; background-color:rgba(53,33,100)"> SENTIMIENTOS</h1>
+
+        <h2>Poemario  de:</h2>
+		
+		<h1>Cecilia Pari Silva Santisteban</h1>
+		
+		<h2>Pseudónimo:</h2>
+		
+		<h1>Khaekha López</h1>
+		
+		
+		<h2>Cajamarca - Perú</h2>
+
+      </div>
+
+      
+
+      
+
+    <!-- [cierra] pages_container -->
+    </div>
+  <!-- [cierra] book_container -->
+  </div>
+
+</body>
+</html>
